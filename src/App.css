@@ -1,38 +1,139 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #6200ea;
+}
+
+.app-header {
+  background-color: #6200ea;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-header .logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.app-header .logo-section img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.app-header nav a {
+  margin: 0 15px;
+}
+
+.app-footer {
+  background-color: #6200ea;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.homepage {
+  padding: 20px;
+}
+
+.note-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.note-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.note-card h3 {
+  color: #333;
+}
+
+.view-btn {
+  background-color: #6200ea;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.note-details {
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.actions .edit-btn, .delete-btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.delete-btn {
+  background-color: red;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.note-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 20px auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.note-form input, .note-form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.save-btn {
+  background-color: #6200ea;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* App.css */
+
+.app-container {
+  display: flex;
+  /* Aligns sidebar and main content side-by-side */
+}
+
+.App {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the footer stays at the bottom */
+  /* Allows App content to take up remaining space */
+}
+
+.main-content {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  /* Additional styling as needed */
 }

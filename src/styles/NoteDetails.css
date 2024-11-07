@@ -1,0 +1,55 @@
+/* NoteDetails.css */
+
+.note-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  width: 80%;
+  max-width: 600px;
+}
+
+.note-details h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.note-details p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.note-details .button-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.note-details button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.note-details button:first-child {
+  background-color: #0077cc;
+  color: white;
+}
+
+.note-details button:last-child {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.note-details button:hover {
+  opacity: 0.9;
+}

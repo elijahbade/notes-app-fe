@@ -1,0 +1,80 @@
+.app-footer {
+    background: linear-gradient(135deg, #f5f5f5 25%, #eeeeee 25%, #eeeeee 50%, #f5f5f5 50%, #f5f5f5 75%, #eeeeee 75%, #eeeeee);
+    background-size: 15px 15px; /* Smaller and softer pattern */
+    padding: 2rem;
+    color: #333;
+    max-width: inherit; /* Set max-width */
+    margin: 0 auto; /* Center footer within the page */
+    border-radius: 8px; /* Optional: rounded corners for a softer look */
+    position: relative; /* Ensure proper layout */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    margin-right: 88%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.footer-section {
+    max-width: 300px;
+}
+
+.footer-section h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #0077cc;
+}
+
+.footer-section p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin: 0.5rem 0;
+}
+
+.footer-section ul li a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons a {
+    color: #0077cc;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #005fa3;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 1rem;
+}
+
+.main-content {
+    padding-bottom: 100px; /* Ensure space for the footer */
+
+}
